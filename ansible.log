@@ -1,0 +1,119 @@
+2023-04-26 15:02:47,294 p=35108 u=memoor n=ansible | [WARNING]: Unable to parse /Users/memoor/Downloads/Terraform-Projects/AWS_VPC_Complete_Stack_Deployment-Terraform/Ansible/inventory-dpro as an inventory source
+
+2023-04-26 15:02:47,295 p=35108 u=memoor n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-04-26 15:02:47,303 p=35108 u=memoor n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-04-26 15:02:50,076 p=35108 u=memoor n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: websrvgrp
+
+2023-04-26 15:02:50,077 p=35108 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 15:02:50,077 p=35108 u=memoor n=ansible | skipping: no hosts matched
+2023-04-26 15:02:50,077 p=35108 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 15:03:32,702 p=35188 u=memoor n=ansible | [WARNING]: Unable to parse /Users/memoor/Downloads/Terraform-Projects/AWS_VPC_Complete_Stack_Deployment-Terraform/Ansible/inventory as an inventory source
+
+2023-04-26 15:03:32,703 p=35188 u=memoor n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-04-26 15:03:32,708 p=35188 u=memoor n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-04-26 15:03:33,094 p=35188 u=memoor n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: websrvgrp
+
+2023-04-26 15:03:33,095 p=35188 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 15:03:33,095 p=35188 u=memoor n=ansible | skipping: no hosts matched
+2023-04-26 15:03:33,095 p=35188 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 15:05:04,862 p=35301 u=memoor n=ansible | ERROR! the playbook: ansible/playbooks/web.yml could not be found
+2023-04-26 15:05:41,135 p=35347 u=memoor n=ansible | [WARNING]: Unable to parse /Users/memoor/Downloads/Terraform-Projects/AWS_VPC_Complete_Stack_Deployment-Terraform/Ansible/inventory/production as an inventory source
+
+2023-04-26 15:05:41,136 p=35347 u=memoor n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-04-26 15:05:41,141 p=35347 u=memoor n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-04-26 15:05:41,472 p=35347 u=memoor n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: websrvgrp
+
+2023-04-26 15:05:41,473 p=35347 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 15:05:41,473 p=35347 u=memoor n=ansible | skipping: no hosts matched
+2023-04-26 15:05:41,473 p=35347 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 15:25:47,539 p=36513 u=memoor n=ansible | [WARNING]: Unable to parse /Users/memoor/Downloads/Terraform-Projects/AWS_VPC_Complete_Stack_Deployment-Terraform/Ansible/inventory/production as an inventory source
+
+2023-04-26 15:25:47,540 p=36513 u=memoor n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-04-26 15:25:47,548 p=36513 u=memoor n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-04-26 15:25:47,932 p=36513 u=memoor n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: websrvgrp
+
+2023-04-26 15:25:47,933 p=36513 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 15:25:47,933 p=36513 u=memoor n=ansible | skipping: no hosts matched
+2023-04-26 15:25:47,933 p=36513 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 20:39:39,880 p=37224 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 20:39:39,936 p=37224 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 20:39:46,277 p=37224 u=memoor n=ansible | fatal: [3.12.123.50]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: memoor@3.12.123.50: Permission denied (publickey).", "unreachable": true}
+2023-04-26 20:39:46,279 p=37224 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 20:39:46,279 p=37224 u=memoor n=ansible | 3.12.123.50                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:10:38,048 p=38981 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:10:38,068 p=38981 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:10:46,943 p=38981 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: memoor@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:10:46,946 p=38981 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:10:46,946 p=38981 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:30:31,881 p=40047 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:30:31,901 p=40047 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:30:38,774 p=40047 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: memoor@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:30:38,776 p=40047 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:30:38,777 p=40047 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:35:30,804 p=40323 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:35:30,819 p=40323 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:35:37,482 p=40323 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: memoor@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:35:37,484 p=40323 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:35:37,484 p=40323 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:39:47,784 p=40586 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:39:47,806 p=40586 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:39:53,708 p=40586 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: no such identity: /System/Volumes/Data/Users/memoor/.ssh/devpro-stack-key: No such file or directory\r\nmemoor@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:39:53,711 p=40586 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:39:53,712 p=40586 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:43:03,182 p=40766 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:43:03,203 p=40766 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:43:09,840 p=40766 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: memoor@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:43:09,842 p=40766 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:43:09,842 p=40766 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 21:59:10,318 p=41627 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 21:59:10,340 p=41627 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 21:59:17,066 p=41627 u=memoor n=ansible | fatal: [3.137.211.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ec2-user@3.137.211.213: Permission denied (publickey).", "unreachable": true}
+2023-04-26 21:59:17,068 p=41627 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 21:59:17,068 p=41627 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-26 22:00:28,174 p=41739 u=memoor n=ansible | PLAY [Setup Nginx svc] ***********************************************************************************************************************************************************************************
+2023-04-26 22:00:28,196 p=41739 u=memoor n=ansible | TASK [Install nginx] *************************************************************************************************************************************************************************************
+2023-04-26 22:03:44,858 p=41739 u=memoor n=ansible | fatal: [3.137.211.213]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: unknown reason"}
+2023-04-26 22:03:44,863 p=41739 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 22:03:44,863 p=41739 u=memoor n=ansible | 3.137.211.213              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-26 22:12:29,508 p=42404 u=memoor n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-26 22:12:29,528 p=42404 u=memoor n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-26 22:12:30,051 p=42404 u=memoor n=ansible | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2023-04-26 22:12:30,052 p=42404 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 22:12:30,052 p=42404 u=memoor n=ansible | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-26 22:14:00,734 p=42511 u=memoor n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-26 22:14:00,751 p=42511 u=memoor n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-26 22:14:02,067 p=42511 u=memoor n=ansible | ok: [localhost]
+2023-04-26 22:14:02,081 p=42511 u=memoor n=ansible | TASK [Install  jdk, maven, git] **************************************************************************************************************************************************************************
+2023-04-26 22:14:04,677 p=42511 u=memoor n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-04-26 22:14:04,677 p=42511 u=memoor n=ansible | failed: [localhost] (item=git) => {"ansible_loop_var": "item", "changed": false, "cmd": "apt-get update", "item": "git", "msg": "[Errno 2] No such file or directory: b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-04-26 22:14:05,135 p=42511 u=memoor n=ansible | failed: [localhost] (item=openjdk-8-jdk) => {"ansible_loop_var": "item", "changed": false, "cmd": "apt-get update", "item": "openjdk-8-jdk", "msg": "[Errno 2] No such file or directory: b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-04-26 22:14:05,590 p=42511 u=memoor n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "cmd": "apt-get update", "item": "maven", "msg": "[Errno 2] No such file or directory: b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-04-26 22:14:05,596 p=42511 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 22:14:05,596 p=42511 u=memoor n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-26 22:23:23,567 p=43102 u=memoor n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-26 22:23:23,585 p=43102 u=memoor n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-26 22:23:24,875 p=43102 u=memoor n=ansible | ok: [localhost]
+2023-04-26 22:23:24,890 p=43102 u=memoor n=ansible | TASK [Install  jdk, maven, git] **************************************************************************************************************************************************************************
+2023-04-26 22:23:26,451 p=43102 u=memoor n=ansible | failed: [localhost] (item=git) => {"ansible_loop_var": "item", "changed": false, "item": "git", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:23:27,351 p=43102 u=memoor n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:23:28,227 p=43102 u=memoor n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "item": "maven", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:23:28,233 p=43102 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 22:23:28,233 p=43102 u=memoor n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-26 22:25:22,841 p=44018 u=memoor n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-26 22:25:22,861 p=44018 u=memoor n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-26 22:25:23,897 p=44018 u=memoor n=ansible | ok: [localhost]
+2023-04-26 22:25:23,913 p=44018 u=memoor n=ansible | TASK [Install jdk, maven, git with Homebrew] *************************************************************************************************************************************************************
+2023-04-26 22:25:25,065 p=44018 u=memoor n=ansible | failed: [localhost] (item=git) => {"ansible_loop_var": "item", "changed": false, "item": "git", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:25:25,963 p=44018 u=memoor n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:25:26,893 p=44018 u=memoor n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "item": "maven", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
+2023-04-26 22:25:26,899 p=44018 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-26 22:25:26,899 p=44018 u=memoor n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
