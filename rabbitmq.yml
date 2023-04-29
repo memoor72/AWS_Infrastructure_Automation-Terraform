@@ -32,6 +32,25 @@
       tags:
         - package
 
+    - name: Remove problematic repository
+      ansible.builtin.apt_repository:
+         repo: "deb https://dl.bintray.com/rabbitmq/debian bionic main"
+         state: absent
+      become: yes
+
+    - name: Add RabbitMQ repository key
+      ansible.builtin.apt_key:
+        url: "https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey"
+        state: present
+      become: yes
+
+    - name: Add secure RabbitMQ repository
+      ansible.builtin.apt_repository:
+        repo: "deb https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu/ bionic main"
+        state: present
+      become: yes
+
+
     - apt_repository:
         repo: deb https://dl.bintray.com/rabbitmq/debian bionic main
         state: present

@@ -1,6 +1,10 @@
 ---
 - name: Setup Mysql with accounts db and remote login
   hosts: dbsrvgrp
+  vars:
+    dbuser: admin
+    dbpass: admin123
+    dbname: accounts
   gather_facts: no
   tasks:
     - name: Installing Mysql Service and dependencies
@@ -12,7 +16,6 @@
       loop:
         - mysql-server
         - mysql-client
-        - python-mysqldb
         - python3-mysqldb
         - libmysqlclient-dev
       ignore_errors: yes

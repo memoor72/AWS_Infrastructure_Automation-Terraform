@@ -13,3 +13,4 @@ variable "PubSub3Cidr" {}
 variable "PrivSub1Cidr" {}
 variable "PrivSub2Cidr" {}
 variable "PrivSub3Cidr" {}
+variable "ami" {}

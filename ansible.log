@@ -117,3 +117,1036 @@
 2023-04-26 22:25:26,893 p=44018 u=memoor n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "item": "maven", "msg": "Error: Running Homebrew as root is extremely dangerous and no longer supported.\nAs Homebrew does not drop privileges on installation you would be giving all\nbuild scripts full access to your system."}
 2023-04-26 22:25:26,899 p=44018 u=memoor n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
 2023-04-26 22:25:26,899 p=44018 u=memoor n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 15:43:59,604 p=1546 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 15:43:59,604 p=1546 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 15:43:59,605 p=1546 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 15:43:59,962 p=1546 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 15:43:59,993 p=1546 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 15:44:01,490 p=1546 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 15:44:01,515 p=1546 u=ubuntu n=ansible | TASK [Install jdk, maven, git with Homebrew] *************************************************************************************************************************************************************
+2023-04-29 15:44:01,936 p=1546 u=ubuntu n=ansible | failed: [localhost] (item=git) => {"ansible_loop_var": "item", "changed": false, "item": "git", "msg": "Failed to find required executable \"brew\" in paths: /usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"}
+2023-04-29 15:44:02,173 p=1546 u=ubuntu n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "Failed to find required executable \"brew\" in paths: /usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"}
+2023-04-29 15:44:02,402 p=1546 u=ubuntu n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "item": "maven", "msg": "Failed to find required executable \"brew\" in paths: /usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"}
+2023-04-29 15:44:02,406 p=1546 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 15:44:02,407 p=1546 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 15:49:58,336 p=1731 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 15:49:58,336 p=1731 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 15:49:58,336 p=1731 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 15:49:58,504 p=1731 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 15:49:58,515 p=1731 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 15:49:59,762 p=1731 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 15:49:59,787 p=1731 u=ubuntu n=ansible | TASK [Install jdk, maven, git with Homebrew] *************************************************************************************************************************************************************
+2023-04-29 15:50:01,292 p=1731 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 15:50:02,044 p=1731 u=ubuntu n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "No package matching 'openjdk@8' is available"}
+2023-04-29 15:50:18,866 p=1731 u=ubuntu n=ansible | changed: [localhost] => (item=maven)
+2023-04-29 15:50:18,874 p=1731 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 15:50:18,875 p=1731 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 15:52:10,567 p=3741 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 15:52:10,567 p=3741 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 15:52:10,568 p=3741 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 15:52:10,896 p=3741 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 15:52:10,914 p=3741 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 15:52:12,309 p=3741 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 15:52:12,329 p=3741 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 15:52:13,506 p=3741 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 15:52:14,201 p=3741 u=ubuntu n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "No package matching 'openjdk@8' is available"}
+2023-04-29 15:52:15,182 p=3741 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 15:52:15,186 p=3741 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 15:52:15,186 p=3741 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:01:19,340 p=3930 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:01:19,340 p=3930 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:01:19,341 p=3930 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:01:19,510 p=3930 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:01:19,522 p=3930 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:01:20,781 p=3930 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:01:20,801 p=3930 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:01:21,951 p=3930 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:01:22,629 p=3930 u=ubuntu n=ansible | failed: [localhost] (item=openjdk@8) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk@8", "msg": "No package matching 'openjdk@8' is available"}
+2023-04-29 16:01:23,313 p=3930 u=ubuntu n=ansible | failed: [localhost] (item=maveni) => {"ansible_loop_var": "item", "changed": false, "item": "maveni", "msg": "No package matching 'maveni' is available"}
+2023-04-29 16:01:23,318 p=3930 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:01:23,318 p=3930 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:03:08,961 p=4108 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:03:08,962 p=4108 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:03:08,962 p=4108 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:03:09,128 p=4108 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:03:09,138 p=4108 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:03:10,374 p=4108 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:03:10,395 p=4108 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:03:11,563 p=4108 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:03:38,135 p=4108 u=ubuntu n=ansible | changed: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:03:38,872 p=4108 u=ubuntu n=ansible | failed: [localhost] (item=maveni) => {"ansible_loop_var": "item", "changed": false, "item": "maveni", "msg": "No package matching 'maveni' is available"}
+2023-04-29 16:03:38,882 p=4108 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:03:38,882 p=4108 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:06:19,342 p=5623 u=ubuntu n=ansible | # /usr/lib/python3/dist-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-04-29 16:06:19,343 p=5623 u=ubuntu n=ansible | amazon.aws                    5.4.0  
+2023-04-29 16:06:19,343 p=5623 u=ubuntu n=ansible | ansible.netcommon             4.1.0  
+2023-04-29 16:06:19,343 p=5623 u=ubuntu n=ansible | ansible.posix                 1.5.2  
+2023-04-29 16:06:19,343 p=5623 u=ubuntu n=ansible | ansible.utils                 2.9.0  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | ansible.windows               1.13.0 
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | arista.eos                    6.0.1  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | awx.awx                       21.14.0
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | azure.azcollection            1.15.0 
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | check_point.mgmt              4.0.0  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | chocolatey.chocolatey         1.4.0  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | cisco.aci                     2.6.0  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | cisco.asa                     4.0.0  
+2023-04-29 16:06:19,344 p=5623 u=ubuntu n=ansible | cisco.dnac                    6.7.1  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.intersight              1.0.27 
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.ios                     4.5.0  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.iosxr                   4.1.0  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.ise                     2.5.12 
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.meraki                  2.15.1 
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.mso                     2.4.0  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.nso                     1.0.3  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.nxos                    4.3.0  
+2023-04-29 16:06:19,345 p=5623 u=ubuntu n=ansible | cisco.ucs                     1.8.0  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | cloud.common                  2.1.3  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | cloudscale_ch.cloud           2.2.4  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.aws                 5.4.0  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.azure               2.0.0  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.ciscosmb            1.0.5  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.crypto              2.12.0 
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.digitalocean        1.23.0 
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.dns                 2.5.3  
+2023-04-29 16:06:19,346 p=5623 u=ubuntu n=ansible | community.docker              3.4.3  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.fortios             1.0.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.general             6.6.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.google              1.0.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.grafana             1.5.4  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.hashi_vault         4.2.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.hrobot              1.8.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.libvirt             1.2.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.mongodb             1.5.2  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.mysql               3.6.0  
+2023-04-29 16:06:19,347 p=5623 u=ubuntu n=ansible | community.network             5.0.0  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.okd                 2.3.0  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.postgresql          2.3.2  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.proxysql            1.5.1  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.rabbitmq            1.2.3  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.routeros            2.8.0  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.sap                 1.0.0  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.sap_libs            1.4.1  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.skydive             1.0.0  
+2023-04-29 16:06:19,348 p=5623 u=ubuntu n=ansible | community.sops                1.6.1  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | community.vmware              3.5.0  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | community.windows             1.12.0 
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | community.zabbix              1.9.3  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | containers.podman             1.10.1 
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | cyberark.conjur               1.2.0  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | cyberark.pas                  1.0.17 
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | dellemc.enterprise_sonic      2.0.0  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | dellemc.openmanage            6.3.0  
+2023-04-29 16:06:19,349 p=5623 u=ubuntu n=ansible | dellemc.os10                  1.1.1  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | dellemc.os6                   1.0.7  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | dellemc.os9                   1.0.4  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | dellemc.powerflex             1.6.0  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | dellemc.unity                 1.6.0  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | f5networks.f5_modules         1.23.0 
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | fortinet.fortimanager         2.1.7  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | fortinet.fortios              2.2.3  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | frr.frr                       2.0.2  
+2023-04-29 16:06:19,350 p=5623 u=ubuntu n=ansible | gluster.gluster               1.0.2  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | google.cloud                  1.1.3  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | grafana.grafana               1.1.1  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | hetzner.hcloud                1.11.0 
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | hpe.nimble                    1.1.4  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | ibm.qradar                    2.1.0  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | ibm.spectrum_virtualize       1.11.0 
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | infinidat.infinibox           1.3.12 
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | infoblox.nios_modules         1.4.1  
+2023-04-29 16:06:19,351 p=5623 u=ubuntu n=ansible | inspur.ispim                  1.3.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | inspur.sm                     2.3.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | junipernetworks.junos         4.1.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | kubernetes.core               2.4.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | lowlydba.sqlserver            1.3.1  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | mellanox.onyx                 1.0.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | microsoft.ad                  1.0.0  
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | netapp.aws                    21.7.0 
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | netapp.azure                  21.10.0
+2023-04-29 16:06:19,352 p=5623 u=ubuntu n=ansible | netapp.cloudmanager           21.22.0
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netapp.elementsw              21.7.0 
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netapp.ontap                  22.5.0 
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netapp.storagegrid            21.11.1
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netapp.um_info                21.8.0 
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netapp_eseries.santricity     1.4.0  
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | netbox.netbox                 3.12.0 
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | ngine_io.cloudstack           2.3.0  
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | ngine_io.exoscale             1.0.0  
+2023-04-29 16:06:19,353 p=5623 u=ubuntu n=ansible | ngine_io.vultr                1.1.3  
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | openstack.cloud               1.10.0 
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | openvswitch.openvswitch       2.1.0  
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | ovirt.ovirt                   2.4.1  
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | purestorage.flasharray        1.17.2 
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | purestorage.flashblade        1.11.0 
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | purestorage.fusion            1.4.2  
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | sensu.sensu_go                1.13.2 
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | splunk.es                     2.1.0  
+2023-04-29 16:06:19,354 p=5623 u=ubuntu n=ansible | t_systems_mms.icinga_director 1.32.2 
+2023-04-29 16:06:19,355 p=5623 u=ubuntu n=ansible | theforeman.foreman            3.10.0 
+2023-04-29 16:06:19,355 p=5623 u=ubuntu n=ansible | vmware.vmware_rest            2.3.1  
+2023-04-29 16:06:19,355 p=5623 u=ubuntu n=ansible | vultr.cloud                   1.7.0  
+2023-04-29 16:06:19,355 p=5623 u=ubuntu n=ansible | vyos.vyos                     4.0.2  
+2023-04-29 16:06:19,355 p=5623 u=ubuntu n=ansible | wti.remote                    1.0.4  
+2023-04-29 16:07:17,238 p=5628 u=ubuntu n=ansible | Starting galaxy collection install process
+2023-04-29 16:07:17,239 p=5628 u=ubuntu n=ansible | Process install dependency map
+2023-04-29 16:07:17,239 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:17,340 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:17,440 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:17,540 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:17,641 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:17,741 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:17,842 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:17,942 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:18,042 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:18,143 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:18,243 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:18,344 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:18,444 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:18,545 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:18,645 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:18,745 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:18,846 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:18,946 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:19,047 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:19,147 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:19,247 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:19,348 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:19,448 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:19,548 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:19,649 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:19,749 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:19,850 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:19,950 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:20,051 p=5628 u=ubuntu n=ansible | Starting collection install process
+2023-04-29 16:07:20,051 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:20,052 p=5628 u=ubuntu n=ansible | Downloading https://galaxy.ansible.com/download/community-general-6.6.0.tar.gz to /home/ubuntu/.ansible/tmp/ansible-local-5628g6cnnzgo/tmpw14ffwhk/community-general-6.6.0-1w49cxyq
+2023-04-29 16:07:20,157 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:20,257 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:20,357 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:20,458 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:20,558 p=5628 u=ubuntu n=ansible | Installing 'community.general:6.6.0' to '/home/ubuntu/.ansible/collections/ansible_collections/community/general'
+2023-04-29 16:07:20,558 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:20,659 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:20,759 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:20,860 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:20,960 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:21,062 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:21,162 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:21,263 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:21,363 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:21,463 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:21,564 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:21,664 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:21,764 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:21,865 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:21,965 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:22,065 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:22,165 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:22,266 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:22,366 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:22,466 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:22,567 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:22,667 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:22,767 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:22,868 p=5628 u=ubuntu n=ansible | |
+2023-04-29 16:07:22,968 p=5628 u=ubuntu n=ansible | /
+2023-04-29 16:07:23,068 p=5628 u=ubuntu n=ansible | -
+2023-04-29 16:07:23,168 p=5628 u=ubuntu n=ansible | \
+2023-04-29 16:07:23,269 p=5628 u=ubuntu n=ansible | community.general:6.6.0 was installed successfully
+2023-04-29 16:09:24,935 p=5635 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:09:24,935 p=5635 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:09:24,936 p=5635 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:09:25,129 p=5635 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:09:25,141 p=5635 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:09:26,450 p=5635 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:09:26,472 p=5635 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:09:27,637 p=5635 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:09:28,588 p=5635 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:09:29,285 p=5635 u=ubuntu n=ansible | failed: [localhost] (item=maveni) => {"ansible_loop_var": "item", "changed": false, "item": "maveni", "msg": "No package matching 'maveni' is available"}
+2023-04-29 16:09:29,290 p=5635 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:09:29,290 p=5635 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:10:09,875 p=5814 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:10:09,875 p=5814 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:10:09,876 p=5814 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:10:10,045 p=5814 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:10:10,055 p=5814 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:10:11,309 p=5814 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:10:11,330 p=5814 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:10:12,489 p=5814 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:10:13,428 p=5814 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:10:14,389 p=5814 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 16:10:14,401 p=5814 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 16:10:19,217 p=5814 u=ubuntu n=ansible | changed: [localhost]
+2023-04-29 16:10:19,230 p=5814 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 16:11:01,869 p=5814 u=ubuntu n=ansible | changed: [localhost]
+2023-04-29 16:11:01,899 p=5814 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 16:11:03,161 p=5814 u=ubuntu n=ansible | failed: [localhost] (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "b5913d2b8a0d1de2a3854a7482a33422dea8610d", "item": "/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-04-29 16:11:03,165 p=5814 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:11:03,166 p=5814 u=ubuntu n=ansible | localhost                  : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:21:27,086 p=6231 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:21:27,086 p=6231 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:21:27,087 p=6231 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:21:27,343 p=6231 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/build.yml': line 32, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+         state: directory
+          mode: '0755'
+              ^ here
+
+2023-04-29 16:23:33,490 p=6240 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:23:33,491 p=6240 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:23:33,491 p=6240 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:23:33,725 p=6240 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:23:33,746 p=6240 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:23:35,134 p=6240 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:23:35,157 p=6240 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:23:36,359 p=6240 u=ubuntu n=ansible | failed: [localhost] (item=git) => {"ansible_loop_var": "item", "changed": false, "item": "git", "msg": "No package matching 'i\"git\"' is available"}
+2023-04-29 16:23:37,049 p=6240 u=ubuntu n=ansible | failed: [localhost] (item=openjdk-8-jdk) => {"ansible_loop_var": "item", "changed": false, "item": "openjdk-8-jdk", "msg": "No package matching 'i\"openjdk-8-jdk\"' is available"}
+2023-04-29 16:23:37,721 p=6240 u=ubuntu n=ansible | failed: [localhost] (item=maven) => {"ansible_loop_var": "item", "changed": false, "item": "maven", "msg": "No package matching 'i\"maven\"' is available"}
+2023-04-29 16:23:37,725 p=6240 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:23:37,726 p=6240 u=ubuntu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:26:34,514 p=6416 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:26:34,515 p=6416 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:26:34,515 p=6416 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:26:34,682 p=6416 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:26:34,692 p=6416 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:26:35,934 p=6416 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:26:35,955 p=6416 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:26:37,163 p=6416 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:26:38,137 p=6416 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:26:39,092 p=6416 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 16:26:39,103 p=6416 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 16:26:40,197 p=6416 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:26:40,207 p=6416 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 16:26:40,227 p=6416 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 16:26:40,238 p=6416 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 16:26:40,648 p=6416 u=ubuntu n=ansible | changed: [localhost]
+2023-04-29 16:26:40,656 p=6416 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 16:26:41,737 p=6416 u=ubuntu n=ansible | changed: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 16:26:41,750 p=6416 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 16:26:42,203 p=6416 u=ubuntu n=ansible | changed: [localhost]
+2023-04-29 16:26:42,230 p=6416 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:26:42,230 p=6416 u=ubuntu n=ansible | localhost                  : ok=6    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 16:27:18,791 p=6769 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:27:18,791 p=6769 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:27:18,791 p=6769 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:27:19,108 p=6769 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:27:19,118 p=6769 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:27:20,370 p=6769 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:27:20,391 p=6769 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:27:21,572 p=6769 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:27:22,505 p=6769 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:27:23,449 p=6769 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 16:27:23,460 p=6769 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 16:27:24,296 p=6769 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:27:24,307 p=6769 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 16:27:24,328 p=6769 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 16:27:24,339 p=6769 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 16:27:24,749 p=6769 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:27:24,757 p=6769 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 16:27:25,560 p=6769 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 16:27:25,571 p=6769 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 16:27:26,060 p=6769 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:27:26,092 p=6769 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 16:27:26,105 p=6769 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 16:27:35,925 p=6769 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-server) => {"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:27:37,411 p=6769 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-client) => {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:27:38,898 p=6769 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:27:40,386 p=6769 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python3-mysqldb) => {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:27:41,867 p=6769 u=ubuntu n=ansible | failed: [18.222.39.229] (item=libmysqlclient-dev) => {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:27:41,870 p=6769 u=ubuntu n=ansible | fatal: [18.222.39.229]: UNREACHABLE! => {"changed": false, "msg": "All items completed", "results": [{"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}]}
+2023-04-29 16:27:41,871 p=6769 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:27:41,871 p=6769 u=ubuntu n=ansible | 18.222.39.229              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:27:41,872 p=6769 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 16:35:47,715 p=7423 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:35:47,715 p=7423 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:35:47,715 p=7423 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:35:48,010 p=7423 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:35:48,020 p=7423 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:35:49,266 p=7423 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:35:49,287 p=7423 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:35:50,485 p=7423 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:35:51,430 p=7423 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:35:52,377 p=7423 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 16:35:52,389 p=7423 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 16:35:53,225 p=7423 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:35:53,234 p=7423 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 16:35:53,255 p=7423 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 16:35:53,265 p=7423 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 16:35:53,675 p=7423 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:35:53,687 p=7423 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 16:35:54,469 p=7423 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 16:35:54,482 p=7423 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 16:35:54,951 p=7423 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:35:54,980 p=7423 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 16:35:54,993 p=7423 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 16:35:56,509 p=7423 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-server) => {"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:35:57,995 p=7423 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-client) => {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:35:59,482 p=7423 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:36:00,967 p=7423 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python3-mysqldb) => {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:36:02,456 p=7423 u=ubuntu n=ansible | failed: [18.222.39.229] (item=libmysqlclient-dev) => {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:36:02,459 p=7423 u=ubuntu n=ansible | fatal: [18.222.39.229]: UNREACHABLE! => {"changed": false, "msg": "All items completed", "results": [{"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}]}
+2023-04-29 16:36:02,460 p=7423 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:36:02,460 p=7423 u=ubuntu n=ansible | 18.222.39.229              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:36:02,460 p=7423 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 16:59:19,881 p=8284 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 16:59:19,881 p=8284 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 16:59:19,881 p=8284 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 16:59:20,170 p=8284 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 16:59:20,181 p=8284 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 16:59:21,434 p=8284 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:59:21,455 p=8284 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 16:59:22,630 p=8284 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 16:59:23,594 p=8284 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 16:59:24,545 p=8284 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 16:59:24,557 p=8284 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 16:59:25,411 p=8284 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:59:25,422 p=8284 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 16:59:25,442 p=8284 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 16:59:25,453 p=8284 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 16:59:25,867 p=8284 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:59:25,878 p=8284 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 16:59:26,669 p=8284 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 16:59:26,682 p=8284 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 16:59:27,158 p=8284 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 16:59:27,189 p=8284 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 16:59:27,202 p=8284 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 16:59:28,713 p=8284 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-server) => {"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:59:30,202 p=8284 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-client) => {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:59:31,690 p=8284 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:59:33,182 p=8284 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python3-mysqldb) => {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:59:34,672 p=8284 u=ubuntu n=ansible | failed: [18.222.39.229] (item=libmysqlclient-dev) => {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 16:59:34,675 p=8284 u=ubuntu n=ansible | fatal: [18.222.39.229]: UNREACHABLE! => {"changed": false, "msg": "All items completed", "results": [{"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}]}
+2023-04-29 16:59:34,676 p=8284 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 16:59:34,676 p=8284 u=ubuntu n=ansible | 18.222.39.229              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 16:59:34,676 p=8284 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 17:01:13,209 p=8907 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:01:13,210 p=8907 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:01:13,210 p=8907 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:01:13,504 p=8907 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 17:01:13,514 p=8907 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 17:01:14,774 p=8907 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:01:14,798 p=8907 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 17:01:15,961 p=8907 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 17:01:16,908 p=8907 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 17:01:17,858 p=8907 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 17:01:17,870 p=8907 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 17:01:18,733 p=8907 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:01:18,743 p=8907 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 17:01:18,764 p=8907 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 17:01:18,775 p=8907 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 17:01:19,187 p=8907 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:01:19,198 p=8907 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 17:01:19,989 p=8907 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 17:01:20,001 p=8907 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 17:01:20,481 p=8907 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:01:20,511 p=8907 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 17:01:20,525 p=8907 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 17:01:22,042 p=8907 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-server) => {"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:01:23,527 p=8907 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-client) => {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:01:25,015 p=8907 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:01:26,506 p=8907 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python3-mysqldb) => {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:01:27,988 p=8907 u=ubuntu n=ansible | failed: [18.222.39.229] (item=libmysqlclient-dev) => {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:01:27,991 p=8907 u=ubuntu n=ansible | fatal: [18.222.39.229]: UNREACHABLE! => {"changed": false, "msg": "All items completed", "results": [{"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}]}
+2023-04-29 17:01:27,992 p=8907 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 17:01:27,992 p=8907 u=ubuntu n=ansible | 18.222.39.229              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 17:01:27,992 p=8907 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 17:06:27,128 p=9555 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:06:27,128 p=9555 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:06:27,129 p=9555 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:06:27,417 p=9555 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 17:06:27,427 p=9555 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 17:06:28,671 p=9555 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:06:28,692 p=9555 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 17:06:29,841 p=9555 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 17:06:30,763 p=9555 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 17:06:31,675 p=9555 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 17:06:31,687 p=9555 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 17:06:32,518 p=9555 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:06:32,529 p=9555 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 17:06:32,550 p=9555 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 17:06:32,561 p=9555 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 17:06:32,976 p=9555 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:06:32,987 p=9555 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 17:06:33,769 p=9555 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 17:06:33,781 p=9555 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 17:06:34,254 p=9555 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:06:34,285 p=9555 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 17:06:34,297 p=9555 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 17:06:35,805 p=9555 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-server) => {"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:06:37,295 p=9555 u=ubuntu n=ansible | failed: [18.222.39.229] (item=mysql-client) => {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:06:38,774 p=9555 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:06:40,267 p=9555 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python3-mysqldb) => {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:06:41,756 p=9555 u=ubuntu n=ansible | failed: [18.222.39.229] (item=libmysqlclient-dev) => {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}
+2023-04-29 17:06:41,759 p=9555 u=ubuntu n=ansible | fatal: [18.222.39.229]: UNREACHABLE! => {"changed": false, "msg": "All items completed", "results": [{"ansible_loop_var": "item", "item": "mysql-server", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "mysql-client", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "python3-mysqldb", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}, {"ansible_loop_var": "item", "item": "libmysqlclient-dev", "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535", "unreachable": true}]}
+2023-04-29 17:06:41,760 p=9555 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 17:06:41,760 p=9555 u=ubuntu n=ansible | 18.222.39.229              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 17:06:41,760 p=9555 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 17:21:14,626 p=10249 u=ubuntu n=ansible | [WARNING]: Unable to parse /home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/inventory-dpro as an inventory source
+
+2023-04-29 17:21:14,626 p=10249 u=ubuntu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-04-29 17:21:14,630 p=10249 u=ubuntu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-04-29 17:21:14,630 p=10249 u=ubuntu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dbsrvgrp
+
+2023-04-29 17:22:06,991 p=10256 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:22:06,991 p=10256 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:22:06,991 p=10256 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:22:08,593 p=10256 u=ubuntu n=ansible | 18.222.39.229 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535",
+    "unreachable": true
+}
+2023-04-29 17:31:33,148 p=10330 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:31:33,149 p=10330 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:31:33,149 p=10330 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:31:34,749 p=10330 u=ubuntu n=ansible | 18.222.39.229 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ubuntu@3.142.156.195: Permission denied (publickey).\r\nkex_exchange_identification: Connection closed by remote host\r\nConnection closed by UNKNOWN port 65535",
+    "unreachable": true
+}
+2023-04-29 17:38:14,028 p=10437 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:38:14,028 p=10437 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:38:14,029 p=10437 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:38:18,037 p=10437 u=ubuntu n=ansible | 18.222.39.229 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-04-29 17:38:50,147 p=10462 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:38:50,147 p=10462 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:38:50,148 p=10462 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:38:50,438 p=10462 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 17:38:50,448 p=10462 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 17:38:51,709 p=10462 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:38:51,730 p=10462 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 17:38:52,890 p=10462 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 17:38:53,826 p=10462 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 17:38:54,773 p=10462 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 17:38:54,784 p=10462 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 17:38:55,621 p=10462 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:38:55,631 p=10462 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 17:38:55,652 p=10462 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 17:38:55,662 p=10462 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 17:38:56,077 p=10462 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:38:56,087 p=10462 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 17:38:56,870 p=10462 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 17:38:56,882 p=10462 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 17:38:57,357 p=10462 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:38:57,387 p=10462 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 17:38:57,399 p=10462 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 17:39:51,261 p=10462 u=ubuntu n=ansible | changed: [18.222.39.229] => (item=mysql-server)
+2023-04-29 17:40:00,609 p=10462 u=ubuntu n=ansible | changed: [18.222.39.229] => (item=mysql-client)
+2023-04-29 17:40:05,605 p=10462 u=ubuntu n=ansible | failed: [18.222.39.229] (item=python-mysqldb) => {"ansible_loop_var": "item", "changed": false, "item": "python-mysqldb", "msg": "No package matching 'python-mysqldb' is available"}
+2023-04-29 17:40:14,737 p=10462 u=ubuntu n=ansible | changed: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 17:40:27,779 p=10462 u=ubuntu n=ansible | changed: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 17:40:27,786 p=10462 u=ubuntu n=ansible | ...ignoring
+2023-04-29 17:40:27,792 p=10462 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 17:40:33,461 p=10462 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 17:40:33,465 p=10462 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 17:40:33,487 p=10462 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dbuser' is undefined. 'dbuser' is undefined\n\nThe error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/db.yml': line 30, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: creating mysql user\n      ^ here\n"}
+2023-04-29 17:40:33,489 p=10462 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 17:40:33,489 p=10462 u=ubuntu n=ansible | 18.222.39.229              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=1   
+2023-04-29 17:40:33,489 p=10462 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 17:58:04,949 p=10994 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 17:58:04,950 p=10994 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 17:58:04,950 p=10994 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 17:58:05,246 p=10994 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 17:58:05,256 p=10994 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 17:58:06,517 p=10994 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:58:06,537 p=10994 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 17:58:07,714 p=10994 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 17:58:08,660 p=10994 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 17:58:09,605 p=10994 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 17:58:09,616 p=10994 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 17:58:10,467 p=10994 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:58:10,478 p=10994 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 17:58:10,499 p=10994 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 17:58:10,510 p=10994 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 17:58:10,924 p=10994 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:58:10,935 p=10994 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 17:58:11,725 p=10994 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 17:58:11,738 p=10994 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 17:58:12,212 p=10994 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 17:58:12,242 p=10994 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 17:58:12,255 p=10994 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 17:58:18,641 p=10994 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-server)
+2023-04-29 17:58:23,604 p=10994 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-client)
+2023-04-29 17:58:28,521 p=10994 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 17:58:33,430 p=10994 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 17:58:33,438 p=10994 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 17:58:38,192 p=10994 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 17:58:38,197 p=10994 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 17:58:38,218 p=10994 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dbuser' is undefined. 'dbuser' is undefined\n\nThe error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/db.yml': line 29, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: creating mysql user\n      ^ here\n"}
+2023-04-29 17:58:38,219 p=10994 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 17:58:38,220 p=10994 u=ubuntu n=ansible | 18.222.39.229              : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 17:58:38,220 p=10994 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 18:01:51,874 p=11457 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 18:01:51,874 p=11457 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 18:01:51,875 p=11457 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 18:01:52,165 p=11457 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 18:01:52,175 p=11457 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 18:01:53,439 p=11457 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:01:53,460 p=11457 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 18:01:54,640 p=11457 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 18:01:55,603 p=11457 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 18:01:56,561 p=11457 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 18:01:56,573 p=11457 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 18:01:57,412 p=11457 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:01:57,423 p=11457 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 18:01:57,443 p=11457 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 18:01:57,454 p=11457 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 18:01:57,858 p=11457 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:01:57,869 p=11457 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 18:01:58,657 p=11457 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 18:01:58,670 p=11457 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 18:01:59,143 p=11457 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:01:59,174 p=11457 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 18:01:59,186 p=11457 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 18:02:05,285 p=11457 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-server)
+2023-04-29 18:02:10,164 p=11457 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-client)
+2023-04-29 18:02:15,076 p=11457 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 18:02:19,942 p=11457 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 18:02:19,950 p=11457 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 18:02:24,689 p=11457 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:02:24,697 p=11457 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 18:02:27,684 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:27,691 p=11457 u=ubuntu n=ansible | TASK [Creating accounts DB] ******************************************************************************************************************************************************************************
+2023-04-29 18:02:30,488 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:30,495 p=11457 u=ubuntu n=ansible | TASK [Enable remote login to mysql svc] ******************************************************************************************************************************************************************
+2023-04-29 18:02:33,288 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:33,301 p=11457 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] **************************************************************************************************************************************************************************
+2023-04-29 18:02:39,936 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:39,945 p=11457 u=ubuntu n=ansible | PLAY [Deploy SQL file on accounts db] ********************************************************************************************************************************************************************
+2023-04-29 18:02:39,956 p=11457 u=ubuntu n=ansible | TASK [Copy SQL to dbsrv] *********************************************************************************************************************************************************************************
+2023-04-29 18:02:44,988 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:44,995 p=11457 u=ubuntu n=ansible | TASK [Restoring DB] **************************************************************************************************************************************************************************************
+2023-04-29 18:02:47,772 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:47,785 p=11457 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] **************************************************************************************************************************************************************************
+2023-04-29 18:02:54,196 p=11457 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:02:54,205 p=11457 u=ubuntu n=ansible | PLAY [Install Memcache, Start & enable SVC] **************************************************************************************************************************************************************
+2023-04-29 18:02:54,217 p=11457 u=ubuntu n=ansible | TASK [Install Memcache] **********************************************************************************************************************************************************************************
+2023-04-29 18:02:56,141 p=11457 u=ubuntu n=ansible | fatal: [18.216.72.238]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@18.216.72.238: Permission denied (publickey).", "unreachable": true}
+2023-04-29 18:02:56,142 p=11457 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 18:02:56,143 p=11457 u=ubuntu n=ansible | 18.216.72.238              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 18:02:56,143 p=11457 u=ubuntu n=ansible | 18.222.39.229              : ok=9    changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 18:02:56,143 p=11457 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 18:39:59,402 p=12638 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 18:39:59,402 p=12638 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 18:39:59,403 p=12638 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 18:39:59,697 p=12638 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 18:39:59,708 p=12638 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 18:40:01,114 p=12638 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:40:01,138 p=12638 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 18:40:02,388 p=12638 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 18:40:03,358 p=12638 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 18:40:04,329 p=12638 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 18:40:04,340 p=12638 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 18:40:05,223 p=12638 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:40:05,234 p=12638 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 18:40:05,254 p=12638 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 18:40:05,265 p=12638 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 18:40:05,674 p=12638 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:40:05,685 p=12638 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 18:40:06,469 p=12638 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 18:40:06,480 p=12638 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 18:40:06,954 p=12638 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:40:06,984 p=12638 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 18:40:06,997 p=12638 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 18:40:07,035 p=12638 u=ubuntu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: No closing quotation
+2023-04-29 18:40:07,036 p=12638 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "Unexpected failure during module execution: No closing quotation", "stdout": ""}
+2023-04-29 18:40:07,036 p=12638 u=ubuntu n=ansible | ...ignoring
+2023-04-29 18:40:07,043 p=12638 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 18:40:07,071 p=12638 u=ubuntu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: No closing quotation
+2023-04-29 18:40:07,072 p=12638 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "Unexpected failure during module execution: No closing quotation", "stdout": ""}
+2023-04-29 18:40:07,073 p=12638 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 18:40:07,073 p=12638 u=ubuntu n=ansible | 18.222.39.229              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=1   
+2023-04-29 18:40:07,073 p=12638 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 18:41:20,657 p=12996 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 18:41:20,657 p=12996 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 18:41:20,657 p=12996 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 18:41:20,961 p=12996 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 18:41:20,971 p=12996 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 18:41:22,237 p=12996 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:41:22,259 p=12996 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 18:41:23,416 p=12996 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 18:41:24,381 p=12996 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 18:41:25,345 p=12996 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 18:41:25,357 p=12996 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 18:41:26,217 p=12996 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:41:26,228 p=12996 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 18:41:26,249 p=12996 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 18:41:26,260 p=12996 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 18:41:26,668 p=12996 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:41:26,679 p=12996 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 18:41:27,469 p=12996 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 18:41:27,480 p=12996 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 18:41:27,961 p=12996 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:41:27,992 p=12996 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 18:41:28,006 p=12996 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 18:41:28,040 p=12996 u=ubuntu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: No closing quotation
+2023-04-29 18:41:28,041 p=12996 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "Unexpected failure during module execution: No closing quotation", "stdout": ""}
+2023-04-29 18:41:28,041 p=12996 u=ubuntu n=ansible | ...ignoring
+2023-04-29 18:41:28,048 p=12996 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 18:41:28,077 p=12996 u=ubuntu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: No closing quotation
+2023-04-29 18:41:28,077 p=12996 u=ubuntu n=ansible | fatal: [18.222.39.229]: FAILED! => {"msg": "Unexpected failure during module execution: No closing quotation", "stdout": ""}
+2023-04-29 18:41:28,078 p=12996 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 18:41:28,078 p=12996 u=ubuntu n=ansible | 18.222.39.229              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=1   
+2023-04-29 18:41:28,078 p=12996 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 18:42:13,303 p=13350 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 18:42:13,303 p=13350 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 18:42:13,303 p=13350 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 18:42:13,598 p=13350 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 18:42:13,609 p=13350 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 18:42:14,874 p=13350 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:42:14,898 p=13350 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 18:42:16,093 p=13350 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 18:42:17,056 p=13350 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 18:42:18,009 p=13350 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 18:42:18,022 p=13350 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 18:42:18,873 p=13350 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:42:18,884 p=13350 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 18:42:18,904 p=13350 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 18:42:18,914 p=13350 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 18:42:19,321 p=13350 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:42:19,332 p=13350 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 18:42:20,131 p=13350 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 18:42:20,142 p=13350 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 18:42:20,615 p=13350 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 18:42:20,646 p=13350 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 18:42:20,659 p=13350 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 18:42:26,793 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-server)
+2023-04-29 18:42:31,784 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-client)
+2023-04-29 18:42:36,704 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 18:42:41,554 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 18:42:41,563 p=13350 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 18:42:46,332 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:42:46,337 p=13350 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 18:42:49,160 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:42:49,167 p=13350 u=ubuntu n=ansible | TASK [Creating accounts DB] ******************************************************************************************************************************************************************************
+2023-04-29 18:42:51,936 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:42:51,943 p=13350 u=ubuntu n=ansible | TASK [Enable remote login to mysql svc] ******************************************************************************************************************************************************************
+2023-04-29 18:42:54,684 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:42:54,702 p=13350 u=ubuntu n=ansible | PLAY [Deploy SQL file on accounts db] ********************************************************************************************************************************************************************
+2023-04-29 18:42:54,713 p=13350 u=ubuntu n=ansible | TASK [Copy SQL to dbsrv] *********************************************************************************************************************************************************************************
+2023-04-29 18:42:58,744 p=13350 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 18:42:58,751 p=13350 u=ubuntu n=ansible | TASK [Restoring DB] **************************************************************************************************************************************************************************************
+2023-04-29 18:43:01,593 p=13350 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:43:01,605 p=13350 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] **************************************************************************************************************************************************************************
+2023-04-29 18:43:07,860 p=13350 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 18:43:07,869 p=13350 u=ubuntu n=ansible | PLAY [Install Memcache, Start & enable SVC] **************************************************************************************************************************************************************
+2023-04-29 18:43:07,881 p=13350 u=ubuntu n=ansible | TASK [Install Memcache] **********************************************************************************************************************************************************************************
+2023-04-29 18:43:37,401 p=13350 u=ubuntu n=ansible | changed: [18.216.72.238]
+2023-04-29 18:43:37,408 p=13350 u=ubuntu n=ansible | TASK [Start & Enable Memcache] ***************************************************************************************************************************************************************************
+2023-04-29 18:43:41,827 p=13350 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 18:43:41,832 p=13350 u=ubuntu n=ansible | TASK [Enable remote login to memecache] ******************************************************************************************************************************************************************
+2023-04-29 18:43:44,417 p=13350 u=ubuntu n=ansible | changed: [18.216.72.238]
+2023-04-29 18:43:44,430 p=13350 u=ubuntu n=ansible | RUNNING HANDLER [Restart memcached] **********************************************************************************************************************************************************************
+2023-04-29 18:43:49,584 p=13350 u=ubuntu n=ansible | changed: [18.216.72.238]
+2023-04-29 18:43:49,593 p=13350 u=ubuntu n=ansible | PLAY [Install & Setup RabbitMQ with user] ****************************************************************************************************************************************************************
+2023-04-29 18:43:49,607 p=13350 u=ubuntu n=ansible | TASK [Install Erlang Repository Package] *****************************************************************************************************************************************************************
+2023-04-29 18:43:54,944 p=13350 u=ubuntu n=ansible | changed: [18.221.188.7]
+2023-04-29 18:43:54,951 p=13350 u=ubuntu n=ansible | TASK [Add an Erlang Solution public Key] *****************************************************************************************************************************************************************
+2023-04-29 18:43:58,055 p=13350 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 18:43:58,063 p=13350 u=ubuntu n=ansible | TASK [Install Erlang] ************************************************************************************************************************************************************************************
+2023-04-29 18:45:06,361 p=13350 u=ubuntu n=ansible | changed: [18.221.188.7]
+2023-04-29 18:45:06,366 p=13350 u=ubuntu n=ansible | TASK [Add an Apt signing key, uses whichever key is at the URL] ******************************************************************************************************************************************
+2023-04-29 18:45:09,764 p=13350 u=ubuntu n=ansible | changed: [18.221.188.7]
+2023-04-29 18:45:09,771 p=13350 u=ubuntu n=ansible | TASK [apt_repository] ************************************************************************************************************************************************************************************
+2023-04-29 18:45:53,152 p=13350 u=ubuntu n=ansible | fatal: [18.221.188.7]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: E:The repository 'https://dl.bintray.com/rabbitmq/debian bionic Release' does not have a Release file., W:Updating from such a repository can't be done securely, and is therefore disabled by default., W:See apt-secure(8) manpage for repository creation and user configuration details., W:http://binaries.erlang-solutions.com/debian/dists/squeeze/Release.gpg: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details."}
+2023-04-29 18:45:53,153 p=13350 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 18:45:53,153 p=13350 u=ubuntu n=ansible | 18.216.72.238              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 18:45:53,154 p=13350 u=ubuntu n=ansible | 18.221.188.7               : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 18:45:53,154 p=13350 u=ubuntu n=ansible | 18.222.39.229              : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 18:45:53,157 p=13350 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 19:05:12,774 p=14107 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 19:05:12,775 p=14107 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 19:05:12,775 p=14107 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 19:05:12,948 p=14107 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/rabbitmq.yml': line 41, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: Add secure RabbitMQ repository
+     ansible.builtin.apt_repository:
+     ^ here
+
+2023-04-29 19:06:36,032 p=14114 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 19:06:36,033 p=14114 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 19:06:36,033 p=14114 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 19:06:36,331 p=14114 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 19:06:36,341 p=14114 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 19:06:37,610 p=14114 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:06:37,631 p=14114 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 19:06:38,810 p=14114 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 19:06:39,773 p=14114 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 19:06:40,733 p=14114 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 19:06:40,745 p=14114 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 19:06:41,579 p=14114 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:06:41,590 p=14114 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 19:06:41,610 p=14114 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 19:06:41,621 p=14114 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 19:06:42,035 p=14114 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:06:42,046 p=14114 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 19:06:42,833 p=14114 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 19:06:42,845 p=14114 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 19:06:43,312 p=14114 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:06:43,343 p=14114 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 19:06:43,356 p=14114 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 19:06:49,509 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-server)
+2023-04-29 19:06:54,465 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-client)
+2023-04-29 19:06:59,320 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 19:07:04,258 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 19:07:04,266 p=14114 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 19:07:09,016 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:07:09,021 p=14114 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 19:07:11,848 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:07:11,855 p=14114 u=ubuntu n=ansible | TASK [Creating accounts DB] ******************************************************************************************************************************************************************************
+2023-04-29 19:07:14,640 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:07:14,648 p=14114 u=ubuntu n=ansible | TASK [Enable remote login to mysql svc] ******************************************************************************************************************************************************************
+2023-04-29 19:07:17,392 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:07:17,409 p=14114 u=ubuntu n=ansible | PLAY [Deploy SQL file on accounts db] ********************************************************************************************************************************************************************
+2023-04-29 19:07:17,421 p=14114 u=ubuntu n=ansible | TASK [Copy SQL to dbsrv] *********************************************************************************************************************************************************************************
+2023-04-29 19:07:21,428 p=14114 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:07:21,435 p=14114 u=ubuntu n=ansible | TASK [Restoring DB] **************************************************************************************************************************************************************************************
+2023-04-29 19:07:24,256 p=14114 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 19:07:24,270 p=14114 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] **************************************************************************************************************************************************************************
+2023-04-29 19:07:30,376 p=14114 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 19:07:30,385 p=14114 u=ubuntu n=ansible | PLAY [Install Memcache, Start & enable SVC] **************************************************************************************************************************************************************
+2023-04-29 19:07:30,398 p=14114 u=ubuntu n=ansible | TASK [Install Memcache] **********************************************************************************************************************************************************************************
+2023-04-29 19:07:34,801 p=14114 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:07:34,808 p=14114 u=ubuntu n=ansible | TASK [Start & Enable Memcache] ***************************************************************************************************************************************************************************
+2023-04-29 19:07:39,180 p=14114 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:07:39,184 p=14114 u=ubuntu n=ansible | TASK [Enable remote login to memecache] ******************************************************************************************************************************************************************
+2023-04-29 19:07:41,748 p=14114 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:07:41,765 p=14114 u=ubuntu n=ansible | PLAY [Install & Setup RabbitMQ with user] ****************************************************************************************************************************************************************
+2023-04-29 19:07:41,778 p=14114 u=ubuntu n=ansible | TASK [Install Erlang Repository Package] *****************************************************************************************************************************************************************
+2023-04-29 19:07:49,007 p=14114 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:07:49,012 p=14114 u=ubuntu n=ansible | TASK [Add an Erlang Solution public Key] *****************************************************************************************************************************************************************
+2023-04-29 19:07:52,120 p=14114 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:07:52,127 p=14114 u=ubuntu n=ansible | TASK [Install Erlang] ************************************************************************************************************************************************************************************
+2023-04-29 19:07:55,332 p=14114 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:07:55,339 p=14114 u=ubuntu n=ansible | TASK [Add an Apt signing key, uses whichever key is at the URL] ******************************************************************************************************************************************
+2023-04-29 19:07:58,388 p=14114 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:07:58,395 p=14114 u=ubuntu n=ansible | TASK [Remove problematic repository] *********************************************************************************************************************************************************************
+2023-04-29 19:08:01,268 p=14114 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:08:01,275 p=14114 u=ubuntu n=ansible | TASK [Add secure RabbitMQ repository] ********************************************************************************************************************************************************************
+2023-04-29 19:08:52,684 p=14114 u=ubuntu n=ansible | fatal: [18.221.188.7]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: W:http://binaries.erlang-solutions.com/debian/dists/squeeze/Release.gpg: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details., W:GPG error: https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F6609E60DC62814E, E:The repository 'https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu bionic InRelease' is not signed."}
+2023-04-29 19:08:52,685 p=14114 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 19:08:52,685 p=14114 u=ubuntu n=ansible | 18.216.72.238              : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:08:52,685 p=14114 u=ubuntu n=ansible | 18.221.188.7               : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:08:52,685 p=14114 u=ubuntu n=ansible | 18.222.39.229              : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:08:52,685 p=14114 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-04-29 19:15:52,334 p=14839 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 19:15:52,335 p=14839 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 19:15:52,335 p=14839 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 19:15:52,508 p=14839 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/rabbitmq.yml': line 40, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: Add RabbitMQ repository key
+   ^ here
+
+2023-04-29 19:17:23,544 p=14850 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 19:17:23,545 p=14850 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 19:17:23,545 p=14850 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 19:17:23,717 p=14850 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/rabbitmq.yml': line 45, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        state: present
+     become: yes
+     ^ here
+
+2023-04-29 19:18:03,271 p=14856 u=ubuntu n=ansible | [WARNING]: Skipping 'dbuser' as this is not a valid group definition
+
+2023-04-29 19:18:03,272 p=14856 u=ubuntu n=ansible | [WARNING]: Skipping 'dbpass' as this is not a valid group definition
+
+2023-04-29 19:18:03,272 p=14856 u=ubuntu n=ansible | [WARNING]: Skipping 'dbname' as this is not a valid group definition
+
+2023-04-29 19:18:03,565 p=14856 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************************************************************************************************
+2023-04-29 19:18:03,575 p=14856 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************
+2023-04-29 19:18:04,832 p=14856 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:18:04,853 p=14856 u=ubuntu n=ansible | TASK [Install jdk, maven, git with apt] ******************************************************************************************************************************************************************
+2023-04-29 19:18:06,045 p=14856 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-04-29 19:18:06,982 p=14856 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-04-29 19:18:07,932 p=14856 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-04-29 19:18:07,945 p=14856 u=ubuntu n=ansible | TASK [Clone source code from github] *********************************************************************************************************************************************************************
+2023-04-29 19:18:08,784 p=14856 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:18:08,795 p=14856 u=ubuntu n=ansible | TASK [mvn install command to build artifact] *************************************************************************************************************************************************************
+2023-04-29 19:18:08,815 p=14856 u=ubuntu n=ansible | skipping: [localhost]
+2023-04-29 19:18:08,826 p=14856 u=ubuntu n=ansible | TASK [Create files directory] ****************************************************************************************************************************************************************************
+2023-04-29 19:18:09,235 p=14856 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:18:09,246 p=14856 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************************************************************************************************
+2023-04-29 19:18:10,029 p=14856 u=ubuntu n=ansible | ok: [localhost] => (item=/home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/Vprofile-repo/target/vprofile-v2.war)
+2023-04-29 19:18:10,041 p=14856 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ******************************************************************************************************************************************************************
+2023-04-29 19:18:10,517 p=14856 u=ubuntu n=ansible | ok: [localhost]
+2023-04-29 19:18:10,548 p=14856 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] *****************************************************************************************************************************************************
+2023-04-29 19:18:10,562 p=14856 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *********************************************************************************************************************************************************
+2023-04-29 19:18:16,713 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-server)
+2023-04-29 19:18:21,680 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=mysql-client)
+2023-04-29 19:18:26,544 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=python3-mysqldb)
+2023-04-29 19:18:31,410 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229] => (item=libmysqlclient-dev)
+2023-04-29 19:18:31,418 p=14856 u=ubuntu n=ansible | TASK [Start and enable mysql service] ********************************************************************************************************************************************************************
+2023-04-29 19:18:36,140 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:18:36,145 p=14856 u=ubuntu n=ansible | TASK [creating mysql user] *******************************************************************************************************************************************************************************
+2023-04-29 19:18:38,960 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:18:38,967 p=14856 u=ubuntu n=ansible | TASK [Creating accounts DB] ******************************************************************************************************************************************************************************
+2023-04-29 19:18:41,731 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:18:41,739 p=14856 u=ubuntu n=ansible | TASK [Enable remote login to mysql svc] ******************************************************************************************************************************************************************
+2023-04-29 19:18:44,500 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:18:44,517 p=14856 u=ubuntu n=ansible | PLAY [Deploy SQL file on accounts db] ********************************************************************************************************************************************************************
+2023-04-29 19:18:44,530 p=14856 u=ubuntu n=ansible | TASK [Copy SQL to dbsrv] *********************************************************************************************************************************************************************************
+2023-04-29 19:18:48,544 p=14856 u=ubuntu n=ansible | ok: [18.222.39.229]
+2023-04-29 19:18:48,552 p=14856 u=ubuntu n=ansible | TASK [Restoring DB] **************************************************************************************************************************************************************************************
+2023-04-29 19:18:51,345 p=14856 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 19:18:51,358 p=14856 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] **************************************************************************************************************************************************************************
+2023-04-29 19:18:57,828 p=14856 u=ubuntu n=ansible | changed: [18.222.39.229]
+2023-04-29 19:18:57,837 p=14856 u=ubuntu n=ansible | PLAY [Install Memcache, Start & enable SVC] **************************************************************************************************************************************************************
+2023-04-29 19:18:57,850 p=14856 u=ubuntu n=ansible | TASK [Install Memcache] **********************************************************************************************************************************************************************************
+2023-04-29 19:19:02,297 p=14856 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:19:02,303 p=14856 u=ubuntu n=ansible | TASK [Start & Enable Memcache] ***************************************************************************************************************************************************************************
+2023-04-29 19:19:06,755 p=14856 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:19:06,760 p=14856 u=ubuntu n=ansible | TASK [Enable remote login to memecache] ******************************************************************************************************************************************************************
+2023-04-29 19:19:09,322 p=14856 u=ubuntu n=ansible | ok: [18.216.72.238]
+2023-04-29 19:19:09,339 p=14856 u=ubuntu n=ansible | PLAY [Install & Setup RabbitMQ with user] ****************************************************************************************************************************************************************
+2023-04-29 19:19:09,352 p=14856 u=ubuntu n=ansible | TASK [Install Erlang Repository Package] *****************************************************************************************************************************************************************
+2023-04-29 19:19:16,053 p=14856 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:19:16,060 p=14856 u=ubuntu n=ansible | TASK [Add an Erlang Solution public Key] *****************************************************************************************************************************************************************
+2023-04-29 19:19:19,096 p=14856 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:19:19,103 p=14856 u=ubuntu n=ansible | TASK [Install Erlang] ************************************************************************************************************************************************************************************
+2023-04-29 19:19:22,324 p=14856 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:19:22,331 p=14856 u=ubuntu n=ansible | TASK [Add an Apt signing key, uses whichever key is at the URL] ******************************************************************************************************************************************
+2023-04-29 19:19:25,316 p=14856 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:19:25,323 p=14856 u=ubuntu n=ansible | TASK [Remove problematic repository] *********************************************************************************************************************************************************************
+2023-04-29 19:19:28,184 p=14856 u=ubuntu n=ansible | ok: [18.221.188.7]
+2023-04-29 19:19:28,191 p=14856 u=ubuntu n=ansible | TASK [Add RabbitMQ repository key] ***********************************************************************************************************************************************************************
+2023-04-29 19:19:31,636 p=14856 u=ubuntu n=ansible | changed: [18.221.188.7]
+2023-04-29 19:19:31,643 p=14856 u=ubuntu n=ansible | TASK [Add secure RabbitMQ repository] ********************************************************************************************************************************************************************
+2023-04-29 19:19:41,371 p=14856 u=ubuntu n=ansible | changed: [18.221.188.7]
+2023-04-29 19:19:41,378 p=14856 u=ubuntu n=ansible | TASK [apt_repository] ************************************************************************************************************************************************************************************
+2023-04-29 19:20:26,389 p=14856 u=ubuntu n=ansible | fatal: [18.221.188.7]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: E:The repository 'https://dl.bintray.com/rabbitmq/debian bionic Release' does not have a Release file., W:Updating from such a repository can't be done securely, and is therefore disabled by default., W:See apt-secure(8) manpage for repository creation and user configuration details., W:http://binaries.erlang-solutions.com/debian/dists/squeeze/Release.gpg: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details., W:https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details."}
+2023-04-29 19:20:26,390 p=14856 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************
+2023-04-29 19:20:26,390 p=14856 u=ubuntu n=ansible | 18.216.72.238              : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:20:26,393 p=14856 u=ubuntu n=ansible | 18.221.188.7               : ok=7    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:20:26,393 p=14856 u=ubuntu n=ansible | 18.222.39.229              : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-29 19:20:26,393 p=14856 u=ubuntu n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

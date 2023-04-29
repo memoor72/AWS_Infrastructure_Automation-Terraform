@@ -6,6 +6,7 @@ locals {
     "memcache-mc01"  = "mcsrvgrp",
     "rabbitmq-rmq01" = "rmqsrvgrp",
     "mysql-db01"     = "dbsrvgrp",
+
   }
 }
 
@@ -17,7 +18,7 @@ module "ec2_instance" {
 
   name = "${each.key}"
 
-  ami                    = "ami-06c4532923d4ba1ec"
+  ami                    = var.ami
   instance_type          = var.instance_type
   key_name               = module.key_pair.key_pair_name
   monitoring             = true
@@ -39,8 +40,8 @@ data "aws_instance" "created_instances" {
 }
 
 resource "aws_instance" "bastion" {
-  ami                    = "ami-06c4532923d4ba1ec"
-  instance_type          = "t2.micro"
+  ami                    = var.ami
+  instance_type          = var.instance_type
   key_name               = module.key_pair.key_pair_name
   monitoring             = true
   vpc_security_group_ids = [module.vote_service_sg.security_group_id]

@@ -63,7 +63,18 @@ module "vote_service_sg" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
+egress_with_cidr_blocks = [
+    {
+      from_port   = 0
+      to_port     = 0
+      protocol    = "-1"
+      description = "Allow all outbound traffic"
+      cidr_blocks = "0.0.0.0/0"
+    }
+  ]
+
 }
+
 
 # Create load balancer security group
 module "devproELB_sg" {
@@ -82,9 +93,16 @@ module "devproELB_sg" {
       protocol    = "tcp"
       description = "elb HTTP"
       cidr_blocks = "0.0.0.0/0"
-
     }
-
+  ]
+   egress_with_cidr_blocks = [
+    {
+      from_port   = 0
+      to_port     = 0
+      protocol    = "-1"
+      description = "Allow all outbound traffic"
+      cidr_blocks = "0.0.0.0/0"
+    }
   ]
 }
 

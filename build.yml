@@ -2,13 +2,13 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: Install jdk, maven, git with Homebrew
-      homebrew:
+    - name: Install jdk, maven, git with apt
+      ansible.builtin.apt:
         name: "{{item}}"
         state: present
       loop:
         - git
-        - openjdk@8
+        - openjdk-8-jdk
         - maven
 
     - name: Clone source code from github
@@ -24,6 +24,13 @@
         chdir: Vprofile-repo
       when: git_status.changed
       register: mvn_info
+
+    - name: Create files directory
+      ansible.builtin.file:
+        path: files
+        state: directory
+        mode: '0755'
+
 
     - name: Copy artifacts to files directory
       copy:
