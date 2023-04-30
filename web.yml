@@ -3,23 +3,14 @@
   hosts: websrvgrp
   gather_facts: no
   tasks:
-    - name: Install nginx
-      apt:
-        name: nginx
-        state: present
-        update_cache: yes
-        cache_valid_time: 86400
-      tags:
-        - package
+    - name: update
+      apt: update_cache=yes   
+   
+    - name: Install Nginx
+      apt: name=nginx state=latest
 
-    - name: Start & ENable Nginx
-      service:
-        name: nginx
-        state: started
-        enabled: yes
-      tags:
-        - svc
-
+      notify:
+        - restart nginx
 
     - name: Disable Nginx default website
       file:
@@ -28,14 +19,12 @@
       tags:
         - conf
 
-
     - name: Deploy web config file
       template:
-        src: templates/nginxvpro.j2
+        src: /home/ubuntu/Full_Stack_Project/AWS_VPC_Complete_Stack_Deployment-Terraform/templates/nginxdpro.j2
         dest: /etc/nginx/sites-available/vproapp
       tags:
         - conf
-
 
     - name: Enable vproapp website
       file:
@@ -52,3 +41,4 @@
       service:
         name: nginx
         state: restarted
+
